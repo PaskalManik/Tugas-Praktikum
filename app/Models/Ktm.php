@@ -11,12 +11,13 @@ class Ktm extends Model
     protected $table = 'ktm';
     protected $primaryKey = 'id_ktm';
 
-    public function mahasiswa(){
+    public function mahasiswa()
+    {
         return $this->belongsTo(Mahasiswa::class);
     }
 
-    public function dosen(){
+    public function dosen()
+    {
         return $this->belongsTo(dosen::class);
     }
-
 }

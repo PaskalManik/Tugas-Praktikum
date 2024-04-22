@@ -11,7 +11,8 @@ class Dosen extends Model
     protected $table = 'dosen';
     protected $primaryKey = 'id_dosen';
     public $timestamps = false;
-    public function ktm(){
+    public function ktm()
+    {
         return $this->hasOne(ktm::class, 'id_dosen');
     }
     protected $fillable = [
@@ -21,5 +22,4 @@ class Dosen extends Model
         'matakuliah',
         'gender'
     ];
-    
 }
