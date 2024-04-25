@@ -23,7 +23,7 @@ class DosenFactory extends Factory
                 'nama'=>$this->faker->name(),
                 'email'=>$this->faker->unique()->safeEmail,
                 'matakuliah'=>$this->faker->sentence(2),
-                'gender'=>$this->faker->randomElement(['male','female'])
+                'gender'=>$this->faker->randomElement(['Male','Female'])
         ];
     }
 }
