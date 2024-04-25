@@ -10,12 +10,9 @@ class Staff extends Model
     use HasFactory;
     protected $table = 'staff';
     protected $primaryKey = 'id';
-    public $timestamps = false;
     protected $fillable = [
-        'nip',
-        'email',
-        'nama',
-        'tanggal_lahir',
-        'no_hp',
+        'id', 'nip', 'email', 'nama', 'tanggal_lahir', 'no_hp'
     ];
+    public $timestamps = false;
+
 }
