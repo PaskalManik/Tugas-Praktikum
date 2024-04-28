@@ -95,4 +95,12 @@ class MahasiswaController extends Controller
     {
         //
     }
+
+    public function delete($id_mahasiswa)
+    {
+    $mahasiswa = Mahasiswa::find($id_mahasiswa);
+    $mahasiswa->delete();
+    return redirect()->route('index')->with('success', 'Post deleted successfully');
+    }
+
 }

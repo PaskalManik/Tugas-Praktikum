@@ -27,8 +27,8 @@
                 <td>{{$mahasiswa->jurusan}}</td>
                 <td>{{$mahasiswa->alamat}}</td>
                 {{-- <td>{{$mahasiswa->ktm->nomor_identitas}}</td> --}}<td>
-                   <a href="{{route('edit',$mahasiswa->id_mahasiswa)}}"> <button type="button" class="btn btn-primary">Update</button></a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
+                  <a href="{{route('edit',$mahasiswa->id_mahasiswa)}}"> <button type="button" class="btn btn-primary">Update</button></a>
+                  <a href="{{route('delete',$mahasiswa->id_mahasiswa)}}"><button type="button" class="btn btn-danger">Hapus</button></a>
                 </td>
               </tr>
               @endforeach
